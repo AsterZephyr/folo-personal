@@ -191,7 +191,7 @@ curl -H "Authorization: Bearer $CRON_SECRET" \
 
 ## 当前订阅目录
 
-当前 Folo 中保留 81 个订阅，全部指向双语 RSS，不再同时保留原文直连。双语服务允许列表目前有 86 个源，其中 5 个源已完成 RSS 验证但还没有加入 Folo，避免在上游暂时不稳定时制造空订阅。
+当前 Folo 中保留 86 个订阅，全部指向双语 RSS，不再同时保留原文直连；双语服务允许列表也是 86 个源。
 
 | Folo 分类 | 数量 | 代表性来源 |
 | --- | ---: | --- |
@@ -204,12 +204,12 @@ curl -H "Authorization: Bearer $CRON_SECRET" \
 | `商业化·产品增长` | 5 | Lenny、Stratechery、Benedict Evans、Andrew Chen |
 | `广告·营销与媒体` | 3 | Digiday、AdExchanger、Marketing Dive |
 | `人文·博物馆与策展` | 4 | Cooper Hewitt、Science Museum Group Journal、American Museum of Natural History、博物之岛 |
-| `人文·艺术与审美` | 4 | Artforum、Hyperallergic、ARTnews、Artsy News |
-| `设计·建筑与视觉` | 2 | Dezeen、designboom |
-| `人文·文学与写作` | 3 | Electric Literature、The Public Domain Review、McSweeney's |
-| `人文·思想与文化` | 2 | JSTOR Daily、The Point Magazine |
+| `人文·艺术与审美` | 5 | Artforum、Hyperallergic、ARTnews、Artsy News、Artnet News |
+| `设计·建筑与视觉` | 3 | Dezeen、designboom、Design Observer |
+| `人文·文学与写作` | 5 | Electric Literature、The Marginalian、The Public Domain Review、Longreads、McSweeney's |
+| `人文·思想与文化` | 3 | JSTOR Daily、Psyche、The Point Magazine |
 
-人文这一层按“机构一手内容 → 专业艺术媒体 → 设计与视觉编辑部 → 文学刊物与长文平台”的顺序筛选，重点是作品、展览、策展、视觉文化、文学写作和思想文章，而不是泛资讯。当前已接入的博物馆与机构源包括 Cooper Hewitt、Science Museum Group Journal、American Museum of Natural History 和文化部“博物之岛”，均已订阅到 Folo。艺术与审美层包括 Artforum、Hyperallergic、ARTnews、Artsy News；设计层包括 Dezeen、designboom；写作与思想层包括 Electric Literature、The Marginalian、Psyche、JSTOR Daily、The Public Domain Review、Longreads、McSweeney's 和 The Point Magazine，其中 The Marginalian 尚未加入 Folo；它仍保留在服务允许列表，待上游恢复稳定后再加入。
+人文这一层按“机构一手内容 → 专业艺术媒体 → 设计与视觉编辑部 → 文学刊物与长文平台”的顺序筛选，重点是作品、展览、策展、视觉文化、文学写作和思想文章，而不是泛资讯。当前已接入的博物馆与机构源包括 Cooper Hewitt、Science Museum Group Journal、American Museum of Natural History 和文化部“博物之岛”，均已订阅到 Folo。艺术与审美层包括 Artforum、Hyperallergic、ARTnews、Artsy News、Artnet News；设计层包括 Dezeen、designboom、Design Observer；写作与思想层包括 Electric Literature、The Marginalian、Psyche、JSTOR Daily、The Public Domain Review、Longreads、McSweeney's 和 The Point Magazine。
 
 来源筛选参考了机构自己的 RSS 或编辑部页面，并用公开 RSS 目录交叉检查；不能稳定返回 RSS 的页面不会强行加入。X/Twitter 源依赖 RSSHub 或 X RSS 服务，某个上游路由失效时应替换源，不要把临时错误订阅无限重试。
 
