@@ -2,7 +2,7 @@
 
 An unofficial, self-built macOS edition of [Folo](https://github.com/RSSNext/Folo), based on `desktop/v1.15.0` (`b7b6e3a`). It keeps Folo account and feed synchronization while using your own model API for personal reading assistance. Folo's hosted service limits still apply.
 
-Read [PERSONAL.md](./PERSONAL.md) for setup, supported features, privacy boundaries, and local builds. The personal edition disables upstream binary and renderer updates. It is not an official Folo release.
+Read [PERSONAL.md](./PERSONAL.md) for setup, supported features, privacy boundaries, and local builds. The [personal AI and bilingual RSS handoff](./docs/personal-ai-handoff.md) records the complete configuration and maintenance workflow. The personal edition disables upstream binary and renderer updates. It is not an official Folo release.
 
 The source retains the upstream AGPL-3.0 license and copyright notices. Restricted upstream `icons/mgc` artwork is excluded from this edition's distribution; replacement icons carry their own attribution. See [personal release instructions](./docs/personal-release.md) before distributing source or binaries.
 
