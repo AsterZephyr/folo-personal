@@ -1,0 +1,21 @@
+// Adapted to React Native by Folo Personal from Apache-2.0 MingCute; see icons/mingcute-free/NOTICE.md.
+import type { SvgProps } from "react-native-svg"
+import Svg, { Path } from "react-native-svg"
+
+export const Cursor3CuteReIcon = ({
+  width = 24,
+  height = 24,
+  color = "#10161F",
+  ...props
+}: SvgProps & { width?: number; height?: number; color?: string }) => (
+  <Svg {...props} width={width} height={height} fill={color} viewBox="0 0 24 24">
+    <Path
+      fill="none"
+      stroke={color}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M6.172 6.172L4.757 4.758m7.072 1.414l1.414-1.414M9 5.001V3M5 9H3m1.757 4.243l1.415-1.414m13.9.861L9.474 9.16a.25.25 0 0 0-.316.316l3.533 10.598a.25.25 0 0 0 .463.026l2.172-4.652a.25.25 0 0 1 .12-.121l4.653-2.171a.25.25 0 0 0-.027-.464"
+    />
+  </Svg>
+)

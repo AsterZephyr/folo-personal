@@ -1,0 +1,20 @@
+// Adapted to React Native by Folo Personal from Apache-2.0 MingCute; see icons/mingcute-free/NOTICE.md.
+import type { SvgProps } from "react-native-svg"
+import Svg, { Path } from "react-native-svg"
+
+export const GiftCuteReIcon = ({
+  width = 24,
+  height = 24,
+  color = "#10161F",
+  ...props
+}: SvgProps & { width?: number; height?: number; color?: string }) => (
+  <Svg {...props} width={width} height={height} fill={color} viewBox="0 0 24 24">
+    <Path
+      fill="none"
+      stroke={color}
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M5 12h14M5 12h14M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6M5 12a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1m-7 8V7m0 0V6m0 1h-1a3 3 0 0 1-3-3v-.5a.5.5 0 0 1 .5-.5H9a3 3 0 0 1 3 3m0 1h1a3 3 0 0 0 3-3v-.5a.5.5 0 0 0-.5-.5H15a3 3 0 0 0-3 3"
+    />
+  </Svg>
+)

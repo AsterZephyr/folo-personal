@@ -1,0 +1,20 @@
+// Adapted to React Native by Folo Personal from Apache-2.0 MingCute; see icons/mingcute-free/NOTICE.md.
+import type { SvgProps } from "react-native-svg"
+import Svg, { Path } from "react-native-svg"
+
+export const ShareForwardCuteReIcon = ({
+  width = 24,
+  height = 24,
+  color = "#10161F",
+  ...props
+}: SvgProps & { width?: number; height?: number; color?: string }) => (
+  <Svg {...props} width={width} height={height} fill={color} viewBox="0 0 24 24">
+    <Path
+      fill="none"
+      stroke={color}
+      strokeWidth={2}
+      d="M16.207 7.726c-2.398-1.894-4.233-2.99-4.845-3.338c-.106-.06-.238.044-.252.2c-.059.61-.182 2.335-.255 4.403a.01.01 0 0 1-.01.01C6.432 9.006 3 12.586 3 17.001q0 .615.09 1.207a.01.01 0 0 0 .018.005q.413-.492.892-.92A8.97 8.97 0 0 1 10 15h.845a.01.01 0 0 1 .01.01c.076 2.158.207 3.909.262 4.469c.013.13.115.197.217.14c.576-.325 2.403-1.405 4.873-3.356c2.405-1.9 3.982-3.488 4.52-4.05c.109-.114.12-.31.024-.41c-.52-.543-2.134-2.175-4.544-4.078Z"
+      clipRule="evenodd"
+    />
+  </Svg>
+)

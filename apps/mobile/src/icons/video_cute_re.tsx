@@ -1,0 +1,25 @@
+// Adapted to React Native by Folo Personal from Apache-2.0 MingCute; see icons/mingcute-free/NOTICE.md.
+import type { SvgProps } from "react-native-svg"
+import Svg, { Path } from "react-native-svg"
+
+export const VideoCuteReIcon = ({
+  width = 24,
+  height = 24,
+  color = "#10161F",
+  ...props
+}: SvgProps & { width?: number; height?: number; color?: string }) => (
+  <Svg {...props} width={width} height={height} fill={color} viewBox="0 0 24 24">
+    <Path
+      fill="none"
+      stroke={color}
+      strokeWidth={2}
+      d="M3 5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"
+    />
+    <Path
+      fill="none"
+      stroke={color}
+      strokeWidth={2}
+      d="M9.946 8.557a.235.235 0 0 0-.328.19c-.06.515-.169 1.643-.169 3.147s.108 2.633.17 3.147c.018.159.18.253.326.19c.472-.203 1.49-.668 2.81-1.43a27 27 0 0 0 2.643-1.718a.234.234 0 0 0 0-.378a27 27 0 0 0-2.642-1.721a27 27 0 0 0-2.81-1.427Z"
+    />
+  </Svg>
+)
